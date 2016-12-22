@@ -37,6 +37,11 @@
                 New Tweet
 
           %ul.nav.navbar-nav.navbar-right
+            %li
+              %form.navbar-form.navbar-right{action: tweets_path}
+                .form-group
+                  %input.form-control.search-tweets{placeholder: "Search", type: "text"}/
+                  %button.btn.btn-default.search-button{type: "submit"} Search
             - if user_signed_in?
               %li
                 %p.navbar-text

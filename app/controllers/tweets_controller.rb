@@ -5,7 +5,7 @@ class TweetsController < ApplicationController
   # It's in hash form Because we can list multiple actions to exclude
   # GET /tweets
   def index
-    @tweets = Tweet.all.order("created_at DESC")
+    @tweets = Tweet.all.order("created_at DESC").where("text LIKE ?", "%#{params[:search]}%")
   end
 
   # GET /tweets/1
