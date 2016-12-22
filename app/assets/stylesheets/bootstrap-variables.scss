@@ -1,4 +1,4 @@
-p$bootstrap-sass-asset-helper: false !default;
+$bootstrap-sass-asset-helper: false !default;
 // United 3.3.7
 // Variables
 // --------------------------------------------------
@@ -150,8 +150,8 @@ $btn-default-bg:                 $gray-light !default;
 $btn-default-border:             $btn-default-bg !default;
 
 $btn-primary-color:              $btn-default-color !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             $btn-primary-bg !default;
+$btn-primary-bg:                 $brand-info !default;
+$btn-primary-border:             $brand-info !default;
 
 $btn-success-color:              $btn-default-color !default;
 $btn-success-bg:                 $brand-success !default;
